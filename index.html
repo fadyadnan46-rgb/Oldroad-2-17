@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OldRoad Auto | Premium Dealership</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e293b',
+            secondary: '#64748b',
+            accent: '#f59e0b',
+            background: 'var(--background)',
+            foreground: 'var(--foreground)',
+            border: 'var(--border)',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          boxShadow: {
+            'xs': 'var(--shadow-xs)',
+            'sm': 'var(--shadow-sm)',
+            'md': 'var(--shadow-md)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --background: rgb(250, 249, 245);
+      --foreground: rgb(61, 57, 41);
+      --border: rgb(218, 217, 212);
+      --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+      --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+      --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10);
+    }
+    .dark {
+      --background: rgb(38, 38, 36);
+      --foreground: rgb(195, 192, 182);
+      --border: rgb(62, 62, 56);
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react/": "https://esm.sh/react@19.0.0/",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/": "https://esm.sh/react-dom@19.0.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@7.2.0?external=react,react-dom",
+    "motion/react": "https://esm.sh/motion@12.4.7/react?external=react,react-dom",
+    "@google/genai": "https://esm.sh/@google/genai@1.35.0",
+    "xlsx": "https://esm.sh/xlsx@0.18.5",
+    "motion/": "https://esm.sh/motion@^12.34.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans transition-colors duration-300">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
